@@ -46,11 +46,10 @@ app.get('/about', (req, res) => {
     });
 });
 
-app.get('/test', (req, res) => {
-    res.send({
-        name: 'Vinay',
-        age: '20',
-        passion: 'playing tennis'
+app.get('/project', (req, res) => {
+    res.render('project.hbs', {
+        pageTitle: 'Project',
+        body: 'Welcome, see my projects here!'
     })
 })
 
